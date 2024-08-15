@@ -2,14 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  color: #f6f5f5;
+  color: #ffffff;
   font-family: "Ubuntu", sans-serif;
 }
 /* ********************************** header ************************************/
 #nav {
   height: 80px;
   width: 100%;
-  background-color: rgb(76, 199, 236);
+  background-color: rgba(47, 206, 238, 0.866);
   position: fixed;
   display: flex;
   align-items: center;
@@ -27,9 +27,6 @@
   height: 80%;
   width: auto;
 }
-#logo:hover{
-  color: rgb(0, 245, 90);
-}
 #logo img {
   height: 100%;
   width: 100%;
@@ -37,6 +34,10 @@
 }
 #port {
   font-size: 2rem;
+}
+
+#port:hover{
+  color: rgb(0, 245, 90);
 }
 
 #nav ul {
@@ -53,6 +54,7 @@
   align-items: center;
   text-decoration: none;
 }
+
 #nav ul a:hover,
 .active {
   background-color: white;
@@ -65,9 +67,9 @@
 /* *****************************main ******************************* */
 
 .main {
-  height: calc(100% - 80px - 80px);
+  height: calc(100% - 80px - 50px);
   width: 100%;
-  background-color: #415a77;
+  background-image: linear-gradient( rgb(0, 209, 251),rgba(46, 40, 40, 0.455),rgba(51, 162, 69, 0.692));
   position: relative;
   top: 80px;
   display: flex;
@@ -94,7 +96,7 @@
   background-image: url("file\ \(3\).png");
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 2px 3px 15px #ffffff;
+  box-shadow: 0px 0px 45px rgb(7, 255, 143);
   border: 2px groove white;
   margin-bottom: 30px;
 }
@@ -108,6 +110,8 @@
   font-size: 0.75em;
   line-height: 2;
   position: relative;
+  font-weight: 600;
+  background-color: #666565;
 }
 .container-1-about span {
   color: #00ffff;
@@ -142,6 +146,7 @@
   justify-content: space-evenly;
   margin-bottom: 10px;
   position: relative;
+  background-color: #666565;
 }
 .education-box2 {
   height: 150px;
@@ -154,6 +159,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
+  background-color: #666565;
 }
 .education-box3 {
   height: 150px;
@@ -166,13 +172,14 @@
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
+  background-color: #666565;
 }
 .para-head {
   height: 40px;
   width: 90%;
   border-radius: 23px;
   border: 2px groove rgb(7, 255, 143);
-  background-color: #3a506b;
+  background-color: #95ffb5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,6 +195,7 @@
   position: relative;
   padding-left: 20px;
   font-size: 0.69rem;
+  font-weight: 600;
 }
 .para-head:hover {
   background-color: #2ec4b6;
@@ -206,9 +214,9 @@
   border-radius: 50%;
 }
 #footer {
-  height: 80px;
+  height: 50px;
   width: 100%;
-  background-color: #415a77;
+  background-color: #288d55;
   position: relative;
   top: 80px;
   display: flex;
@@ -222,6 +230,12 @@
 #footer p {
   color: black;
   font-size: 23px;
+  font-weight:500;
+}
+
+#footer i:hover {
+  color: #00ffff;
+ box-shadow: 0px 0px 15px #05d4fe;
 }
 
 @media (max-width: 1150px) {
@@ -249,6 +263,7 @@
     border: 2px groove grey;
     border-radius: 10px;
   }
+ 
   #check:checked ~ ul {
     right: 0%;
   }

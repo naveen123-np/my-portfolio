@@ -10,7 +10,7 @@
 #nav {
   height: 80px;
   width: 100%;
-  background-color: rgb(76, 199, 236);
+  background-color: rgba(47, 206, 238, 0.866);
   position: fixed;
   display: flex;
   align-items: center;
@@ -28,9 +28,6 @@
   height: 80%;
   width: auto;
 }
-#logo:hover{
-  color: rgb(0, 245, 90);
-}
 #logo img {
   height: 100%;
   width: 100%;
@@ -38,6 +35,9 @@
 }
 #port{
   font-size: 2rem;
+}
+#port:hover{
+  color: rgb(0, 245, 90);
 }
 #nav ul {
   display: flex;
@@ -64,14 +64,14 @@
 
 /***************************************** main ***********************************/
 #content {
-  height: calc(100vh - 80px - 80px);
+  height: calc(100vh - 80px - 50px);
   width: 100%;
   position: relative;
   top: 80px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background-color: #415a77;
+ background-image: linear-gradient( rgb(0, 209, 251),rgba(46, 40, 40, 0.455),rgba(51, 162, 69, 0.692));
 }
 
 /* *******************************container 1********************************** */
@@ -94,21 +94,27 @@
   font-weight: 600;
   position: relative;
 }
+
 #hire{
   height: 50px;
   width: 25%;
   background-color: rgb(0, 245, 90);
   border: 2px solid rgb(7, 255, 143);
-  position: relative;
   border-radius: 10px;
-  curse:pointer;
+  cursor:pointer;
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 30%;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#hire a {
+  text-decoration: none;
 }
 
+
 #hire:hover{
-  box-shadow: 0px 0px 45px rgb(7, 255, 143);
+  box-shadow: 0px 0px 45px rgb(8, 8, 8);
 }
 /* *******************************container 2********************************** */
 #container2 {
@@ -121,19 +127,23 @@
   border: none;
 }
 #container2 img {
-  height: 100%;
-  width: 95%;
+  height: 80%;
+  width: 80%;
   background-size: cover;
   position: absolute;
+}
+#container2 img:hover{
+  filter: drop-shadow(2px 2px 25px  #05d4fe);
+
 }
 #content span {
   color: rgb(0, 245, 90);
 }
 /* **********************************footer**************************************** */
 #footer {
-  height: 80px;
+  height: 50px;
   width: 100%;
-  background-color: #415a77;
+  background-color: #288d55;
   position: relative;
   top: 80px;
   display: flex;
@@ -143,9 +153,14 @@
   border: none;
 }
 
-#footer i ,p {
+#footer i ,footer p {
   color: black;
   font-size: 23px;
+  font-weight: 500;
+}
+#footer i:hover {
+  color: #00ffff;
+ box-shadow: 0px 0px 15px #05d4fe;
 }
  /* ***********************************responsive for small devices******************* */
 @media (max-width: 600px) {
