@@ -101,6 +101,7 @@
   border: 2px solid rgb(7, 255, 143);
   position: relative;
   border-radius: 10px;
+  curse:pointer;
   position: absolute;
   bottom: 50px;
   left: 30%;
