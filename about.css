@@ -5,11 +5,12 @@
   color: #ffffff;
   font-family: "Ubuntu", sans-serif;
 }
+
 /* ********************************** header ************************************/
 #nav {
   height: 80px;
   width: 100%;
-  background-color: rgba(47, 206, 238, 1);
+  background-color: #15191b;
   position: fixed;
   display: flex;
   align-items: center;
@@ -39,7 +40,6 @@
 #port:hover{
   color: rgb(0, 245, 90);
 }
-
 #nav ul {
   display: flex;
   gap: 30px;
@@ -53,23 +53,30 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  position: relative;
 }
-
-#nav ul a:hover,
-.active {
-  background-color: white;
-  border-radius: 5px;
-  color: rgb(0, 245, 90);
+#nav ul li a::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 1s ease-in-out;
+  background-image: linear-gradient(blue,lightblue);
+  color: black;
+}
+#nav ul li a:hover::after {
+  width: 100%;
 }
 #check {
   display: none;
 }
 /* *****************************main ******************************* */
-
-.main {
+.main{
   height: calc(100% - 80px - 50px);
   width: 100%;
-  background-image: linear-gradient( rgb(0, 209, 251),rgba(46, 40, 40, 0.455),rgba(51, 162, 69, 0.692));
+  background-color: #15191b;
   position: relative;
   top: 80px;
   display: flex;
@@ -93,10 +100,10 @@
 .container-1-img {
   height: 200px;
   width: 200px;
-  background-image: url("file\ \(3\).png");
+  background-image: url("file\ \(2\).png");
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0px 0px 45px rgb(7, 255, 143);
+  box-shadow: 0px 0px 10px rgb(7, 255, 143);
   border: 2px groove white;
   margin-bottom: 30px;
 }
@@ -104,14 +111,17 @@
   height: 200px;
   width: 80%;
   border-radius: 23px;
-  border: 2px solid rgb(7, 255, 143);
-  box-shadow: 0px 0px 45px rgb(7, 255, 143);
+  border: 2px groove grey;
   padding: 30px;
   font-size: 0.75em;
   line-height: 2;
   position: relative;
   font-weight: 600;
-  background-color: #666565;
+  background-color: #272640;
+  color: #f7fff7;
+}
+.container-1-about:hover{
+  box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
 .container-1-about span {
   color: #00ffff;
@@ -137,49 +147,58 @@
 .education-box1 {
   height: 150px;
   width: 80%;
-  border: 2px solid rgb(7, 255, 143);
-  box-shadow: 0px 0px 45px rgb(7, 255, 143);
   border-radius: 23px;
+  border: 2px groove grey;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-bottom: 10px;
   position: relative;
-  background-color: #666565;
+  background-color: #272640;
+  color: #f7fff7;
+}
+.education-box1:hover{
+  box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
 .education-box2 {
   height: 150px;
   width: 80%;
-  border: 2px solid rgb(7, 255, 143);
-  box-shadow: 0px 0px 45px rgb(7, 255, 143);
   border-radius: 23px;
+  border: 2px groove grey;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
-  background-color: #666565;
+  background-color: #272640;
+  color: #f7fff7;
+}
+.education-box2:hover{
+  box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
 .education-box3 {
   height: 150px;
   width: 80%;
-  border: 2px solid rgb(7, 255, 143);
-  box-shadow: 0px 0px 45px rgb(7, 255, 143);
   border-radius: 23px;
+  border: 2px groove grey;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   position: relative;
-  background-color: #666565;
+  background-color: #272640;
+  color: #f7fff7;
+}
+.education-box3:hover{
+  box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
 .para-head {
   height: 40px;
   width: 90%;
   border-radius: 23px;
-  border: 2px groove rgb(7, 255, 143);
-  background-color: #95ffb5;
+  background-color: #272640;
+  border: 1px groove grey;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +206,7 @@
   text-align: center;
   position: absolute;
   top: -20px;
-  left: 10px;
+  left: 20px;
   color: #000000;
   font-weight: 700;
 }
@@ -198,7 +217,7 @@
   font-weight: 600;
 }
 .para-head:hover {
-  background-color: #2ec4b6;
+  background-color: #06d6a0;
   color: #000000;
   filter: drop-shadow(5px 5px 10px #2ec4b6);
   border: none;
@@ -216,7 +235,7 @@
 #footer {
   height: 50px;
   width: 100%;
-  background-color: #288d55;
+  background-color: #15191b;
   position: relative;
   top: 80px;
   display: flex;
@@ -228,7 +247,6 @@
 
 #footer i,
 #footer p {
-  color: black;
   font-size: 23px;
   font-weight:500;
 }
