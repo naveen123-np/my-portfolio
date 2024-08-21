@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,80 +7,9 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-/* ********************************** header ************************************/
-#nav {
-  height: 80px;
-  width: 100%;
-  background-color: #15191b;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 600;
-  z-index: 2;
-}
-#nav .menu-button i {
-  font-size: 32px;
-  margin-right: 20px;
-  display: none;
-  cursor: pointer;
-}
-#logo {
-  height: 80%;
-  width: auto;
-}
-#logo img {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
-#port {
-  font-size: 2rem;
-}
-
-#port:hover{
-  color: rgb(0, 245, 90);
-}
-#nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-#nav ul li a {
-  height: 40px;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  position: relative;
-  gap: 10px;
-  margin-left: 50px;
-}
-#nav ul li a::after {
-  content: '';
-  height: 3px;
-  width: 0%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all 1s ease-in-out;
-  background-image: linear-gradient(blue,lightblue);
-  color: black;
-}
-#nav ul li a:hover::after {
-  width: 100%;
-}
-#nav ul span i {
-  font-size: 23px;
-  color: white;  
-}
-#check {
-  display: none;
-}
 /* *****************************main ******************************* */
-.main{
-  height: calc(100% - 80px);
+.main {
+  height: calc(100%);
   width: 100%;
   background-color: #15191b;
   position: relative;
@@ -88,9 +18,11 @@
   justify-content: space-between;
   gap: 50px;
 }
+
 .container h1 {
   color: lightseagreen;
 }
+
 .container-1 {
   height: 100%;
   width: 50%;
@@ -112,6 +44,7 @@
   border: 2px groove white;
   margin-bottom: 30px;
 }
+
 .container-1-about {
   height: 200px;
   width: 80%;
@@ -125,12 +58,15 @@
   background-color: #272640;
   color: #f7fff7;
 }
-.container-1-about:hover{
+
+.container-1-about:hover {
   box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
+
 .container-1-about span {
   color: #00ffff;
 }
+
 .container-2 {
   height: 100%;
   width: 50%;
@@ -141,14 +77,17 @@
   gap: 30px;
   padding: 10px 0px;
 }
+
 .container-2 h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .container-2 h1:hover,
 .container-1 h1:hover {
   color: #00ffff;
 }
+
 .education-box1 {
   height: 150px;
   width: 80%;
@@ -163,9 +102,11 @@
   background-color: #272640;
   color: #f7fff7;
 }
-.education-box1:hover{
+
+.education-box1:hover {
   box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
+
 .education-box2 {
   height: 150px;
   width: 80%;
@@ -179,9 +120,11 @@
   background-color: #272640;
   color: #f7fff7;
 }
-.education-box2:hover{
+
+.education-box2:hover {
   box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
+
 .education-box3 {
   height: 150px;
   width: 80%;
@@ -195,9 +138,11 @@
   background-color: #272640;
   color: #f7fff7;
 }
-.education-box3:hover{
+
+.education-box3:hover {
   box-shadow: 0px 0px 30px rgb(7, 255, 143);
 }
+
 .para-head {
   height: 40px;
   width: 90%;
@@ -215,18 +160,21 @@
   left: 20px;
   font-weight: 700;
 }
+
 .para-point {
   position: relative;
   padding-left: 20px;
   font-size: 0.69rem;
   font-weight: 600;
 }
+
 .para-head:hover {
   background-color: #06d6a0;
   color: #000000;
   filter: drop-shadow(5px 5px 10px #2ec4b6);
   border: none;
 }
+
 .para-point::before {
   content: "";
   background-image: linear-gradient(to right, #00ffff 100%, #330867 0%);
@@ -243,12 +191,15 @@
   #nav .menu-button i {
     display: block;
   }
-  #check:checked ~ .menu-button i::before {
+
+  #check:checked~.menu-button i::before {
     content: "\f00d";
   }
+
   #check {
     display: none;
   }
+
   #nav ul {
     height: 94%;
     width: 50%;
@@ -264,20 +215,23 @@
     border: 2px groove grey;
     border-radius: 10px;
   }
- 
-  #check:checked ~ ul {
+
+  #check:checked~ul {
     right: 0%;
   }
+
   #nav ul a:hover,
   .active {
     background-color: transparent;
     color: cyan;
   }
+
   nav ul li {
     display: block;
     margin-top: 30px;
   }
-  #check:checked ~ ul {
+
+  #check:checked~ul {
     right: 0%;
   }
 
@@ -286,27 +240,34 @@
     flex-direction: column;
     align-items: center;
   }
+
   .container-1 {
     width: 70%;
     margin-top: 50px;
   }
+
   .container-2 {
     width: 70%;
   }
 }
+
 @media (max-width: 600px) {
   .container-1-about {
     font-size: 9px;
   }
+
   #nav .menu-button i {
     display: block;
   }
-  #check:checked ~ .menu-button i::before {
+
+  #check:checked~.menu-button i::before {
     content: "\f00d";
   }
+
   #check {
     display: none;
   }
+
   #nav ul {
     height: 95vh;
     width: 50%;
@@ -322,9 +283,11 @@
     border: 2px groove grey;
     border-radius: 10px;
   }
-  #check:checked ~ ul {
+
+  #check:checked~ul {
     right: 0%;
   }
+
   #nav ul a:hover,
   .active {
     background-color: transparent;

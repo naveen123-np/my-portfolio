@@ -8,12 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="phone.css" />
+  <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
@@ -24,49 +22,92 @@
     <span id="port"> PORTFOLIO</span>
     <ul>
       <li><a href="#" class="active"> <i class="ri-home-7-fill"></i>HOME </a></li>
-       <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
-     <li><a href="#"> <i class="ri-profile-line"></i> RESUME </a></li>
-    <li><a href="#">   <i class="ri-contacts-book-3-line"></i>  CONTACT </a></li>
+      <li><a href="#about"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="#"> <i class="ri-profile-line"></i> RESUME </a></li>
+      <li><a href="#"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
     </ul>
     <label for="check" class="menu-button">
       <i class="fa-solid fa-bars"></i>
     </label>
     <!-- </nav> -->
   </header>
-  <main id="content">
-    <div id="container1">
-      <div class="container-1-text">
-        <h4>Hello,</h4>
-        <h4><span>Welcome</span> Visitor</h4>
-        <h4>I am <span id="element"></span></h4>
-       <a href="https://www.linkedin.com/in/navenpandey06/" id="hire">
-          HIRE ME </a>
-        <a href="https://www.linkedin.com/in/navenpandey06/" id="hire-2">
+  <main>
+    <div id="content">
+      <div id="container1">
+        <div class="container-1-text">
+          <h4>Hello,</h4>
+          <h4><span>Welcome</span> Visitor</h4>
+          <h4>I am <span id="element"></span></h4>
+          <a href="https://www.linkedin.com/in/navenpandey06/" id="hire">
+            HIRE ME </a>
+          <a href="https://www.linkedin.com/in/navenpandey06/" id="hire-2">
             DOWNLOAD CV</a>
+        </div>
+      </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+      </script>
+      <script src="javascript.js"></script>
+      <script>
+        var typed = new Typed('#element',
+          {
+            strings: ["Naveen Pandey. !!", " a Frontend Developer. !!", "Tech Lover.!!"],
+            typespeed: 250,
+            bacspeed: 200,
+            loop: true
+          }); </script>
+
+      <div id="container2">
+        <img src="file (1).png" alt="">
+        <div class="contact"><span><a href="https://www.instagram.com/naveen._.exe/"><i
+                class="ri-instagram-fill"></i></a></span><span><a href="https://www.linkedin.com/in/navenpandey06/"><i
+                class="ri-linkedin-box-fill"></i></i></a></span>
+          <span><a href="https://discord.gg/eSVAeFt43N"><i class="ri-discord-fill"></i></a></span>
+          <span><a href=""><i class="ri-facebook-circle-fill"></i></a></span>
+        </div>
       </div>
     </div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
-    </script>
-    <script src="javascript.js"></script>
-    <script>
-      var typed = new Typed('#element',
-        {
-          strings: ["Naveen Pandey. !!", " a Frontend Developer. !!", "Tech Lover.!!"],
-          typespeed: 250,
-          bacspeed: 200,
-          loop: true
-        }); </script>
+    <div class="main" >
+      <!-- --------------------------container first ------------------------------->
+      <div class="container-1">
+        <h1 >MY SELF</h1>
+        <div class="container-1-img"></div>
+        <div class="container-1-about">
+          <p class="para-head">ABOUT ME</p>
+          <p>
+            Hello, I am <span>Naveen Pandey</span>. I am from
+            <span>uttarakhand</span> and I am 20 year old . I am a
+            <span>Frontend Developer</span> self taught from sources like
+            (<span>YOUTUBE</span> , <span>MDN</span> , other internet learning
+            platform) and I am upgrading my-self day by day to achieve
+            somthing in this tech field. Curently , I am in Final Year year of
+            Graduation. My Hobbies are <span> Listen Music</span>,
+            <span>Dance</span> , <span>Singing</span> some times . If you give
+            me a chance to prove my-self . I will definetly not leave a single
+            way to give my maximum contribution into that work .
+            <span>THANKS FOR VISITING SITE</span> . !!
+          </p>
+        </div>
+      </div>
 
-    <div id="container2">
-      <img src="file (1).png" alt="">
-      <div class="contact"><span><a href="https://www.instagram.com/naveen._.exe/"><i class="ri-instagram-fill"></i></a></span><span><a
-        href="https://www.linkedin.com/in/navenpandey06/"><i class="ri-linkedin-box-fill"></i></i></a></span>
-    <span><a href="https://discord.gg/eSVAeFt43N"><i class="ri-discord-fill"></i></a></span>
-    <span><a href=""><i class="ri-facebook-circle-fill"></i></a></span></div>
+      <!-- ----------------------container second ------------------------------->
+      <div class="container-2">
+        <h1>EDUCATION</h1>
+
+        <div class="education-box1">
+          <p class="para-head">10TH FROM CBSE BOARD</p>
+          <p class="para-point">I Completed my 10th With first Divison .</p>
+        </div>
+        <div class="education-box2">
+          <p class="para-head">12TH FROM CBSE BOARD</p>
+          <p class="para-point">I Completed my 12th With first Divison .</p>
+        </div>
+        <div class="education-box3">
+          <p class="para-head">GRADUATION FROM KUMAUN UNIVERSITY</p>
+          <p class="para-point">CURRENTLY I AM IN FINAL YEAR .</p>
+        </div>
+      </div>
     </div>
   </main>
-
-  
 
 </body>
 
