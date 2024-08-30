@@ -151,7 +151,7 @@ height: 50px;
 width: 50vw;
 font-size: 0.8rem;
 line-height: 1.5;
-color: cyan;
+color: rgb(249, 249, 249);
 }
 form{
     height:50vh;
@@ -162,10 +162,13 @@ form{
     align-items: center;
     text-align: left;
     background-color: rgb(255, 255, 255);
-    border-radius: 23px;
+    border-radius: 10px;
     gap: 30px;
     padding: 0px 16px;
     
+}
+form h1{
+  color: #000000;
 }
 form label {
     height: 30px ;
@@ -186,7 +189,7 @@ form input {
     color: #000000;
 }
 textarea{
-    height: 50px;
+    height: 35px;
     width: 60%;
     border-radius: 10px;
     border: 2px groove black;
