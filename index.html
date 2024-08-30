@@ -11,25 +11,30 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="phone.css" />
-  <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
-  <header id="nav">
-    <!-- <nav > -->
-    <input type="checkbox" id="check">
-    <span id="logo"></span>
+  <header >
+    <!-- <nav  > -->
+    <nav id="nav" >
     <span id="port"> PORTFOLIO</span>
     <ul>
       <li><a href="#" class="active"> <i class="ri-home-7-fill"></i>HOME </a></li>
-      <li><a href="#about"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
       <li><a href="#"> <i class="ri-profile-line"></i> RESUME </a></li>
       <li><a href="#"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
     </ul>
-    <label for="check" class="menu-button">
+    <span onclick="showPanel()" class="menu">
       <i class="fa-solid fa-bars"></i>
-    </label>
-    <!-- </nav> -->
+    </span>
+    </nav>
+    <ul class="slide-bar">
+      <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
+      <li><a href="#" class="active"> <i class="ri-home-7-fill"></i>HOME </a></li>
+      <li><a href="about.html"><i class="ri-user-line"></i> ABOUT </a></li>
+      <li><a href="#"> <i class="ri-profile-line"></i> RESUME </a></li>
+      <li><a href="#"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+    </ul>
   </header>
   <main>
     <div id="content">
@@ -66,49 +71,17 @@
         </div>
       </div>
     </div>
-    <div class="main" id="about" >
-      <!-- --------------------------container first ------------------------------->
-      <div class="container-1">
-        <h1 >MY SELF</h1>
-        <div class="container-1-img"></div>
-        <div class="container-1-about">
-          <p class="para-head">ABOUT ME</p>
-          <p>
-            Hello, I am <span>Naveen Pandey</span>. I am from
-            <span>uttarakhand</span> and I am 20 year old . I am a
-            <span>Frontend Developer</span> self taught from sources like
-            (<span>YOUTUBE</span> , <span>MDN</span> , other internet learning
-            platform) and I am upgrading my-self day by day to achieve
-            somthing in this tech field. Curently , I am in Final Year year of
-            Graduation. My Hobbies are <span> Listen Music</span>,
-            <span>Dance</span> , <span>Singing</span> some times . If you give
-            me a chance to prove my-self . I will definetly not leave a single
-            way to give my maximum contribution into that work .
-            <span>THANKS FOR VISITING SITE</span> . !!
-          </p>
-        </div>
-      </div>
-
-      <!-- ----------------------container second ------------------------------->
-      <div class="container-2">
-        <h1>EDUCATION</h1>
-
-        <div class="education-box1">
-          <p class="para-head">10TH FROM CBSE BOARD</p>
-          <p class="para-point">I Completed my 10th With first Divison .</p>
-        </div>
-        <div class="education-box2">
-          <p class="para-head">12TH FROM CBSE BOARD</p>
-          <p class="para-point">I Completed my 12th With first Divison .</p>
-        </div>
-        <div class="education-box3">
-          <p class="para-head">GRADUATION FROM KUMAUN UNIVERSITY</p>
-          <p class="para-point">CURRENTLY I AM IN FINAL YEAR .</p>
-        </div>
-      </div>
-    </div>
   </main>
-
+  <script>
+    function showPanel (){
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display="flex";
+    }
+    function hidePanel(){
+      const slidePanel = document.querySelector(".slide-bar");
+      slidePanel.style.display="none";
+    }
+  </script>
 </body>
 
 </html>
