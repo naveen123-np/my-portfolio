@@ -22,15 +22,6 @@
   display: none;
   cursor: pointer;
 }
-#logo {
-  height: 80%;
-  width: auto;
-}
-#logo img {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
 #port{
   font-size: 1.5rem;
   margin-left: 20px;

@@ -19,18 +19,6 @@
   z-index: 2;
 }
 
-
-#logo {
-  height: 80%;
-  width: auto;
-}
-
-#logo img {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
-
 #port {
   font-size: 1.5rem;
   margin-left: 20px;
@@ -46,14 +34,17 @@
   margin-right: 50px;
 
 }
+
 #nav li {
   display: block;
   list-style: none;
 }
-#nav li a{
+
+#nav li a {
   text-decoration: none;
   position: relative;
 }
+
 #nav ul li a::after {
   content: '';
   height: 3px;
@@ -62,14 +53,15 @@
   bottom: -10px;
   left: 0;
   transition: all 1s ease-in-out;
-  background-image: linear-gradient(blue,lightblue);
+  background-image: linear-gradient(blue, lightblue);
   color: black;
 }
 
 #nav ul li a:hover::after {
   width: 100%;
 }
-.menu{
+
+.menu {
   height: 80%;
   width: 20px;
   font-size: 32px;
@@ -82,7 +74,7 @@
 .slide-bar {
   height: 100vh;
   width: 200px;
-  background-color:  #000000;
+  background-color: #000000;
   position: fixed;
   right: 0;
   top: 0;
@@ -116,12 +108,16 @@
   background-image: linear-gradient(blue, lightblue);
   color: black;
 }
-.slide-bar li a:hover::after , .active{
+
+.slide-bar li a:hover::after,
+.active {
   width: 100%;
 }
-.cross{
+
+.cross {
   font-size: 32px;
 }
+
 /* *****************************main ******************************* */
 .main {
   height: calc(100% - 80px);
@@ -129,7 +125,8 @@
   background-color: #15191b;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 50px;
 }
 
@@ -192,109 +189,105 @@
   color: #00ffff;
 }
 
-.container-2 {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 70px;
-  padding: 10px 0px;
-}
-
-.container-2 h1 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.container-2 h1:hover,
 .container-1 h1:hover {
   color: #00ffff;
 }
 
-.education-box1 {
-  height: 85px;
-  width: 55%;
-  border-radius: 23px;
-  border: 2px groove grey;
-  padding: 30px;
+.skills {
+  min-height: 300px;
+  width: 70%;
+  background-color: #272640;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 10px;
-  position: relative;
-  background-color: #272640;
-  color: #f7fff7;
-}
-
-.education-box1::after {
-  content: '';
-  height: 300px;
-  width: 3px;
-  background-image: linear-gradient(to right, #00ffff 100%, #330867 0%);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-}
-
-.education-box1:hover {
-  box-shadow: 0px 0px 30px rgb(7, 255, 143);
-}
-
-.education-box2 {
-  height: 85px;
-  width: 55%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   border-radius: 23px;
-  border: 2px groove grey;
-  padding: 30px;
+  padding-top: 10px;
+  margin-bottom: 100px;
+}
+.skills span {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  background-color: #272640;
-  color: #f7fff7;
-}
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-/* .education-box2::after{
+}
+.skills span p {
+width: 70%;
+height: 20px;
+border-radius: 23px;
+background-color: transparent;
+position: relative;
+text-align: right;
+line-height: 1.2;
+padding-right: 10px;
+border: 2px solid black;
+}
+.html::before{
   content: '';
-  height: 3px;
-  width: 83px;
-  background-image: linear-gradient(to right, #00ffff 100%, #330867 0%);
+  height: 100%;
+  width: 70%;
   position: absolute;
-  top: 50%;
-  right: 100%;
-} */
-.education-box2:hover {
-  box-shadow: 0px 0px 30px rgb(7, 255, 143);
-}
-
-.education-box3 {
-  height: 85px;
-  width: 55%;
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%,-50%); */
+background-image: linear-gradient(to right,rgb(17, 13, 233),rgb(195, 17, 17));
+  /* transition: all 2s ease-in-out; */
   border-radius: 23px;
-  border: 2px groove grey;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  background-color: #272640;
-  color: #f7fff7;
+animation-name: fill;
+animation-duration: 2s;
+animation-fill-mode: backwards;
+}
+@keyframes fill{
+  from{
+    width: 0%;
+  }
+  to{width: 70%;}
 }
 
-/* .education-box3::after{
+.css::before{
   content: '';
-  height: 3px;
-  width: 83px;
-  background-image: linear-gradient(to right, #00ffff 100%, #330867 0%);
+  height: 100%;
+  width: 50%;
   position: absolute;
-  top: 51%;
-  right: 100%;
-} */
-.education-box3:hover {
-  box-shadow: 0px 0px 30px rgb(7, 255, 143);
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%,-50%); */
+background-image: linear-gradient(to right,rgb(17, 13, 233),rgb(195, 17, 17));
+  /* transition: all 2s ease-in-out; */
+  border-radius: 23px;
+animation-name: half;
+animation-duration: 2s;
+animation-fill-mode: backwards;
+}
+.javascript{
+    margin-right: 53px;
+}
+.javascript::before{
+  content: '';
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  /* transform: translate(-50%,-50%); */
+background-image: linear-gradient(to right,rgb(17, 13, 233),rgb(195, 17, 17));
+  /* transition: all 2s ease-in-out; */
+  border-radius: 23px;
+animation-name: half;
+animation-duration: 2s;
+animation-fill-mode: backwards;
 }
 
+@keyframes half{
+  from{
+    width: 0%;
+  }
+  to{width: 50%;}
+}
 .para-head {
   height: 40px;
   width: 90%;
@@ -339,49 +332,18 @@
   border-radius: 50%;
 }
 
-/* .line{
-  height: 59vh;
-  width: 3px;
-  background-image: linear-gradient(to right, #00ffff 100%, #330867 0%);
-  display: block;
-  margin-top: 19px;
-} */
-
 
 @media (max-width: 1150px) {
-  #nav .menu-button i {
+
+  .menu {
     display: block;
   }
-
-  
-  #check:checked~.menu-button i::before {
-    content: "\f00d";
-  }
-
-.menu {
-  display: block;
-}
   .slide-bar a:hover,
   .active {
     background-color: transparent;
     color: cyan;
   }
 
-  .main {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .container-1 {
-    width: 70%;
-    margin-top: 50px;
-    margin-left: 80px;
-  }
-
-  .container-2 {
-    width: 70%;
-    margin-left: 100px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -389,9 +351,6 @@
     font-size: 9px;
   }
 
-  #check:checked~.menu-button i::before {
-    content: "\f00d";
-  }
   #nav ul {
     display: none;
   }

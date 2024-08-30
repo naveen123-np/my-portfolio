@@ -7,33 +7,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="about.css" />
 
   <title> my portfolio </title>
 </head>
 
 <body>
-  <header >
+  <header>
     <nav id="nav">
-    <span id="port"> PORTFOLIO</span>
-    <ul>
+      <span id="port"> PORTFOLIO</span>
+      <ul>
+        <li><a href="index.html"> <i class="ri-home-7-fill"></i>HOME </a></li>
+        <li><a href="#" class="active"><i class="ri-user-line"></i> ABOUT </a></li>
+        <li><a href="resume.html"> <i class="ri-profile-line"></i> RESUME </a></li>
+        <li><a href="#"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
+      </ul>
+      <span onclick="showPanel()" class="menu"><i class="fa-solid fa-bars"></i></span>
+      </div>
+    </nav>
+    <ul class="slide-bar">
+      <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
       <li><a href="index.html"> <i class="ri-home-7-fill"></i>HOME </a></li>
       <li><a href="#" class="active"><i class="ri-user-line"></i> ABOUT </a></li>
       <li><a href="#"> <i class="ri-profile-line"></i> RESUME </a></li>
       <li><a href="#"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
     </ul>
-    <span onclick="showPanel()" class="menu"><i class="fa-solid fa-bars"></i></span>
-  </div>
-</nav>
-<ul class="slide-bar">
-  <li class="cross" onclick="hidePanel()"><i class="fa-solid fa-xmark"></i></li>
-  <li><a href="index.html"> <i class="ri-home-7-fill"></i>HOME </a></li>
-  <li><a href="#" class="active"><i class="ri-user-line"></i> ABOUT </a></li>
-  <li><a href="#"> <i class="ri-profile-line"></i> RESUME </a></li>
-  <li><a href="#"> <i class="ri-contacts-book-3-line"></i> CONTACT </a></li>
-</ul>
-</header>
+  </header>
   <main>
     <div class="main" id="about">
       <!-- --------------------------container first ------------------------------->
@@ -57,18 +57,29 @@
           </p>
         </div>
       </div>
-    
+      <div class="skills">
+        <h2> SKILLS</h2>
+      <span>
+         Html <p class="html">75%</p>
+      </span>
+        <span>CSS
+          <p class="css">50%</p></span>
+
+    <span>  Javascript
+      <p class="javascript">50%</p ></span>
+    </div>
   </main>
-  
+
   <script>
-    function showPanel (){
+    function showPanel() {
       const slidePanel = document.querySelector(".slide-bar");
-      slidePanel.style.display="flex";
+      slidePanel.style.display = "flex";
     }
-    function hidePanel(){
+    function hidePanel() {
       const slidePanel = document.querySelector(".slide-bar");
-      slidePanel.style.display="none";
+      slidePanel.style.display = "none";
     }
   </script>
 </body>
+
 </html>
